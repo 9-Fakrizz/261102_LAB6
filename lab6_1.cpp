@@ -9,16 +9,19 @@ int main(){
     while(num != 0){
         cout << "Enter an integer: ";
         cin >> num;
-        if(num % 2 == 0){
-            even = even + 1;
-        }
-        else{
-            odd = odd + 1;
+        if(num != 0){
+            if(num % 2 == 0){
+                even = even + 1;
+            }
+        
+            else{
+                odd = odd + 1;
+            }
         }
 
     }
     cout << "#Even numbers = " <<even<<"\n";
-    cout << "#Odd numbers = "<<odd-1;
+    cout << "#Odd numbers = "<<odd;
 
 
     return 0;
